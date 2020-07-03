@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Case Statement in Pug
+    body
+        - const orderStatus = 'Random'
+
+        case orderStatus
+            when 'Pending'
+                p Pending status
+            when 'In_transit'
+                p In transit status
+            when 'Completed'
+                p Completed status
+            default
+                p Default values
